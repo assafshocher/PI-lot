@@ -1,0 +1,6 @@
+# Copy to .dev.vars for local private use. Never commit .dev.vars.
+OWNER_PASSWORD=""
+SESSION_SECRET=""
+APP_ORIGIN="http://127.0.0.1:5174"
+# Demo access is accepted on loopback hosts only. Never set this in production.
+DEMO_MODE="false"

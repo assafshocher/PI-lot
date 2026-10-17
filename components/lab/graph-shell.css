@@ -1,0 +1,43 @@
+/* One compact navigation bar across every Lab Manager view. */
+.lab-app.lab-topnav{display:block;max-width:none;width:100%;padding:0}
+.lab-topnav>.lab-sidebar{position:sticky;top:0;z-index:30;height:auto;min-height:64px;padding:10px 20px;display:grid;grid-template-columns:auto minmax(170px,220px) minmax(0,1fr);align-items:center;gap:20px;border-right:0;border-bottom:1px solid var(--lab-line);background:#fffffff0;backdrop-filter:blur(18px);box-shadow:0 4px 22px #44315b08}
+.lab-topnav .lab-sidebar .lab-workspace-header{margin:0;min-width:0}
+.lab-topnav .lab-sidebar .lab-title-row{display:block;margin:0}
+.lab-topnav .lab-sidebar .lab-title-row h1{font-size:20px;letter-spacing:-.6px;white-space:nowrap}
+.lab-topnav .lab-sidebar .lab-title-row h1:before{content:"";display:inline-block;width:30px;height:30px;margin:0 9px 0 0;vertical-align:-7px;background:url("/favicon.svg") center/contain no-repeat}
+.lab-topnav .lab-sidebar .lab-title-row p,.lab-topnav .lab-sidebar-footer{display:none}
+.lab-topnav .lab-global-search{width:100%;max-width:220px;min-width:0;margin:0}
+.lab-topnav .lab-tabs{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:5px;margin:0;padding:0;border:0;overflow:visible}
+.lab-topnav .lab-tabs>button{min-height:38px;padding:8px 12px;border:0;border-radius:8px;font-size:13px;gap:7px;flex-shrink:0}
+.lab-topnav .lab-tabs>button>span{margin:0;font-size:10px;min-width:18px}
+.lab-topnav .lab-tabs .lab-refresh{display:flex;margin:0;padding:9px;min-width:38px;justify-content:center}
+.lab-topnav .lab-tabs .lab-refresh:after{display:none}
+.lab-topnav>.lab-main{width:100%;max-width:1600px;margin:0 auto;padding:24px 28px 18px}
+.lab-topnav.lab-graph-page>.lab-main{max-width:none;padding:16px 18px 12px}
+.lab-topnav .lab-workspace-footer{margin-top:10px;padding-top:8px;font-size:11px}
+@media(max-width:1150px){
+ .lab-topnav>.lab-sidebar{grid-template-columns:auto minmax(180px,240px);justify-content:space-between;gap:10px 20px}
+ .lab-topnav .lab-global-search{max-width:none}
+ .lab-topnav .lab-tabs{grid-column:1/-1;justify-content:flex-end}
+}
+@media(max-width:900px){
+ .lab-topnav>.lab-sidebar{padding:10px 14px}
+ .lab-topnav .lab-sidebar .lab-title-row h1{font-size:18px}
+ .lab-topnav .lab-tabs>button{font-size:12px;padding:8px;gap:5px}
+ .lab-topnav .lab-tabs>button>span{display:none}
+ .lab-topnav>.lab-main,.lab-topnav.lab-graph-page>.lab-main{padding:16px}
+}
+@media(max-width:700px){
+ .lab-topnav>.lab-sidebar{grid-template-columns:minmax(0,1fr) minmax(155px,1fr);padding:12px 12px 8px;gap:8px}
+ .lab-topnav .lab-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;justify-content:stretch;width:100%}
+ .lab-topnav .lab-tabs>button{justify-content:center;padding:7px 4px;min-width:0;min-height:38px}
+ .lab-topnav .lab-tabs .lab-refresh{min-height:38px;min-width:0;padding:7px}
+ .lab-topnav>.lab-main,.lab-topnav.lab-graph-page>.lab-main{padding:16px 12px 10px}
+}
+@media(max-width:390px){
+ .lab-topnav>.lab-sidebar{grid-template-columns:minmax(0,1fr) minmax(140px,1fr);gap:8px;padding-left:10px;padding-right:10px}
+ .lab-topnav .lab-sidebar .lab-title-row h1{font-size:17px;letter-spacing:-.7px}
+ .lab-topnav .lab-sidebar .lab-title-row h1:before{font-size:18px;margin-right:6px}
+}
+
+html{scroll-padding-top:170px}.lab-topnav .lab-sidebar .lab-title-row h1:before{flex-shrink:0}@media(max-width:390px){.lab-topnav .lab-sidebar .lab-title-row h1:before{width:26px;height:26px;vertical-align:-6px}}

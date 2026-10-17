@@ -1,0 +1,1287 @@
+{
+  "format": "private-app-backup",
+  "app": "lab",
+  "version": 1,
+  "exported_at": "2026-10-18T12:00:00.000Z",
+  "demo": {
+    "fictional": true,
+    "reference_date": "2026-10-18",
+    "description": "Entirely fabricated people, projects, venues, dates, updates, and relationships. No private workspace data was used."
+  },
+  "records": [
+    {
+      "id": "demo_student_mira",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Mira Vale",
+        "degree": "PhD",
+        "lab_status": "In Group",
+        "details": "Studies memory and reasoning in long-running agents.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "mira@example.org",
+        "next_action": "Review the Atlas writing outline.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_theo",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Theo Park",
+        "degree": "PhD",
+        "lab_status": "In Group",
+        "details": "Builds compact world models for navigation.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "theo@example.org",
+        "next_action": "Rehearse the Orbit presentation.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_noor",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Noor Ellis",
+        "degree": "MSc",
+        "lab_status": "In Group",
+        "details": "Explores learning from a handful of examples.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "noor@example.org",
+        "next_action": "Choose Mosaic evaluation scenes.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_luca",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Luca Reed",
+        "degree": "MSc",
+        "lab_status": "In Group",
+        "details": "Works on reliable perception under difficult lighting.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "luca@example.org",
+        "next_action": "Complete the Nightglass robustness study.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_ada",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Ada Chen",
+        "degree": "PhD",
+        "lab_status": "In Group",
+        "details": "Studies controllable generation and scene editing.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "ada@example.org",
+        "next_action": "Compare Lumen editing interfaces.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_sam",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Sam Rowan",
+        "degree": "BSc",
+        "lab_status": "Active Candidate",
+        "details": "Working on a small retrieval project before admission.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "sam@example.org",
+        "next_action": "Bring Sparrow search examples to the next meeting.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_imani",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Imani Wells",
+        "degree": "PhD",
+        "lab_status": "In Group",
+        "details": "Develops uncertainty estimates for changing environments.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "imani@example.org",
+        "next_action": "Prepare Tide results for the lab meeting.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_felix",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Felix Moon",
+        "degree": "MSc",
+        "lab_status": "In Group",
+        "details": "Designs tests for agents that need to ask for help.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "felix@example.org",
+        "next_action": "Track the Compass resubmission.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_elena",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Elena Brooks",
+        "degree": "Postdoc",
+        "lab_status": "In Group",
+        "details": "Connects evaluation, representation learning, and research mentoring.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "elena@example.org",
+        "next_action": "Review cross-project evaluation choices.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_kai",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Kai Bell",
+        "degree": "BSc",
+        "lab_status": "Active Candidate",
+        "details": "Working on adapting inexpensive sensors to new settings.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "kai@example.org",
+        "next_action": "Document the Pebble baseline.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_robin",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Robin Hart",
+        "degree": "MSc",
+        "lab_status": "Candidate",
+        "details": "Prospective student; initial conversation about research interests.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "robin@example.org",
+        "next_action": "Arrange an introductory meeting.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_student_sasha",
+      "kind": "student",
+      "revision": 1,
+      "data": {
+        "name": "Sasha Quinn",
+        "degree": "PhD",
+        "lab_status": "Candidate",
+        "details": "Prospective student exploring a possible fit with the group.",
+        "notes": "Fictional demo person. This profile does not describe a real student.",
+        "email": "sasha@example.org",
+        "next_action": "Share a short reading list before the interview.",
+        "links": [],
+        "files": []
+      },
+      "created_at": "2025-12-22T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_atlas",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Atlas · Long-context agents",
+        "status": "Writing",
+        "details": "A memory system that helps an agent keep track of a task across long interactions.",
+        "notes": "The current draft compares a compact memory with a full-history baseline. The team is preparing clear failure examples and a reproducible evaluation.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/atlas"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_mosaic",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Mosaic · Few-shot scene discovery",
+        "status": "In Progress",
+        "details": "Discover recurring scene structure from a small set of labeled examples.",
+        "notes": "The prototype groups scenes into reusable parts. Next, test whether the same parts transfer to a different environment.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/mosaic"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_orbit",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Orbit · Robot world models",
+        "status": "Done + accepted",
+        "details": "Compact predictive models for navigating unfamiliar spaces.",
+        "notes": "This fictional paper was rejected at an earlier venue and accepted after revision. Keep both decisions in the history.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/orbit"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_nightglass",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Nightglass · Low-light perception",
+        "status": "Rejected + in progress",
+        "details": "Recover reliable visual features when illumination is scarce.",
+        "notes": "The team is addressing a rejected submission with an expanded evaluation and clearer limitations.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/nightglass"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_lumen",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Lumen · Generative scene editing",
+        "status": "In Progress",
+        "details": "Make local scene edits while preserving surrounding geometry.",
+        "notes": "Compare a few simple editing controls before expanding the model. Any possible venue remains a recommendation until the team commits.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/lumen"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_sparrow",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Sparrow · Efficient retrieval",
+        "status": "In Progress",
+        "details": "Fast retrieval of useful memories from a small agent workspace.",
+        "notes": "A project candidate is testing a lightweight indexing approach. The current milestone is a documented baseline.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/sparrow"
+          }
+        ],
+        "files": [],
+        "deadline_id": "demo_deadline_robotics"
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_tide",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Tide · Uncertainty maps",
+        "status": "Done + submitted",
+        "details": "Maps that distinguish reliable predictions from unexplored regions.",
+        "notes": "The fictional submission is complete and awaiting a decision. No acceptance should be inferred.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/tide"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_compass",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Compass · Agent evaluation",
+        "status": "Rejected + resubmitted",
+        "details": "A focused evaluation of when an agent should act, ask, or stop.",
+        "notes": "A revised fictional paper has been submitted after an earlier rejection. The new decision is pending.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/compass"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_pebble",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Pebble · Sensor adaptation",
+        "status": "In Progress",
+        "details": "Adapt low-cost sensors without rebuilding the entire perception system.",
+        "notes": "Begin with one sensor shift and a reproducible baseline. Record uncertainty rather than treating all readings as equally reliable.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/pebble"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_grove",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Grove · Learning from motion",
+        "status": "In Progress",
+        "details": "Learn object relationships from how a scene changes over time.",
+        "notes": "The team is comparing two simple motion representations before choosing a larger experiment.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/grove"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_echo",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Echo · Audio navigation",
+        "status": "Done",
+        "details": "A completed exploratory prototype for audio-guided navigation.",
+        "notes": "The exploration finished without a paper submission. It remains available through filters but is hidden by default.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/echo"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_sketchbook",
+      "kind": "project",
+      "revision": 1,
+      "data": {
+        "name": "Sketchbook · Early concepts",
+        "status": "Vague Idea",
+        "details": "A place for early ideas that have not become committed projects.",
+        "notes": "No active project or submission commitment yet. This example illustrates filtering early ideas out of the main map.\n\nEntirely fictional demo research; no scientific result is being claimed.",
+        "links": [
+          {
+            "label": "Demo project notes",
+            "url": "https://example.org/demo/projects/sketchbook"
+          }
+        ],
+        "files": []
+      },
+      "created_at": "2026-02-10T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_vision",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Vision Assembly 2027",
+        "venue": "Vision Assembly",
+        "cycle": "2027",
+        "topics": [
+          "Computer vision"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/vision",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-11-16"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_learning",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Learning Systems 2027",
+        "venue": "Learning Systems",
+        "cycle": "2027",
+        "topics": [
+          "Machine learning"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/learning",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-12-31"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_scene",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Signal & Scene 2027",
+        "venue": "Signal & Scene",
+        "cycle": "2027",
+        "topics": [
+          "Graphics",
+          "Computer vision"
+        ],
+        "date_status": "estimated",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/scene",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "expected_window": {
+          "start": "2027-02-20",
+          "end": "2027-03-06",
+          "basis": "Invented two-week planning window, included to demonstrate uncertainty."
+        }
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_robotics",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Robotics Forum 2026",
+        "venue": "Robotics Forum",
+        "cycle": "2026",
+        "topics": [
+          "Robotics"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/robotics",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-10-30"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_adaptive",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Adaptive Intelligence 2027",
+        "venue": "Adaptive Intelligence",
+        "cycle": "2027",
+        "topics": [
+          "Machine learning",
+          "Agents"
+        ],
+        "date_status": "tba",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/adaptive",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": null
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_earlier",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Neural Methods 2026",
+        "venue": "Neural Methods",
+        "cycle": "2026",
+        "topics": [
+          "Machine learning"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/earlier",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-04-21"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_accepted",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Embodied Systems 2026",
+        "venue": "Embodied Systems",
+        "cycle": "2026",
+        "topics": [
+          "Robotics"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/accepted",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-07-20"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_recent",
+      "kind": "deadline",
+      "revision": 1,
+      "data": {
+        "conference_name": "Learning Frontiers 2026",
+        "venue": "Learning Frontiers",
+        "cycle": "2026",
+        "topics": [
+          "Agents",
+          "Machine learning"
+        ],
+        "date_status": "confirmed",
+        "deadline_type": "final",
+        "url": "https://example.org/demo/venues/recent",
+        "notes": "Fictional venue and illustrative dates for the demo. Do not use these dates for real submissions.",
+        "timezone": "Etc/GMT+12",
+        "precision": "date",
+        "source": "Synthetic demo schedule; not an official conference announcement.",
+        "date": "2026-09-23"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_atlas_learning",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_atlas",
+        "deadline_id": "demo_deadline_learning",
+        "status": "confirmed",
+        "notes": "Writing plan is aligned with this fictional deadline.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/atlas-learning"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_atlas_vision",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_atlas",
+        "deadline_id": "demo_deadline_vision",
+        "status": "tentative",
+        "notes": "Alternative if the visual evaluation becomes the main contribution.",
+        "confidence": "medium",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/atlas-vision"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_mosaic_vision",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_mosaic",
+        "deadline_id": "demo_deadline_vision",
+        "status": "confirmed",
+        "notes": "Current fictional target. The graph demo can add Learning Systems as a tentative alternative.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/mosaic-vision"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_orbit_earlier",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_orbit",
+        "deadline_id": "demo_deadline_earlier",
+        "status": "submitted",
+        "notes": "Fictional first submission was rejected. The later acceptance does not replace this record.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/orbit-earlier",
+        "outcome": "rejected"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_orbit_accepted",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_orbit",
+        "deadline_id": "demo_deadline_accepted",
+        "status": "submitted",
+        "notes": "Fictional revised submission was accepted.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/orbit-accepted",
+        "outcome": "accepted"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_nightglass_earlier",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_nightglass",
+        "deadline_id": "demo_deadline_earlier",
+        "status": "submitted",
+        "notes": "Fictional rejection led to a new evaluation plan.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/nightglass-earlier",
+        "outcome": "rejected"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_nightglass_vision",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_nightglass",
+        "deadline_id": "demo_deadline_vision",
+        "status": "confirmed",
+        "notes": "The team has chosen this fictional venue for the revision.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/nightglass-vision"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_lumen_scene",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_lumen",
+        "deadline_id": "demo_deadline_scene",
+        "status": "suggested",
+        "notes": "Low-confidence example recommendation: graphics fit, readiness still uncertain.",
+        "confidence": "low",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/lumen-scene"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_tide_recent",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_tide",
+        "deadline_id": "demo_deadline_recent",
+        "status": "submitted",
+        "notes": "Fictional paper sent; decision not yet recorded.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/tide-recent",
+        "outcome": "pending"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_compass_earlier",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_compass",
+        "deadline_id": "demo_deadline_earlier",
+        "status": "submitted",
+        "notes": "Fictional first version rejected.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/compass-earlier",
+        "outcome": "rejected"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_compass_recent",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_compass",
+        "deadline_id": "demo_deadline_recent",
+        "status": "submitted",
+        "notes": "Fictional revision resubmitted; awaiting decision.",
+        "confidence": "high",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/compass-recent",
+        "outcome": "pending"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_pebble_robotics",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_pebble",
+        "deadline_id": "demo_deadline_robotics",
+        "status": "tentative",
+        "notes": "Possible target if the baseline and adaptation experiment are ready.",
+        "confidence": "medium",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/pebble-robotics"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_grove_learning",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_grove",
+        "deadline_id": "demo_deadline_learning",
+        "status": "tentative",
+        "notes": "Potential fit for the motion representation study.",
+        "confidence": "medium",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/grove-learning"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_grove_scene",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_grove",
+        "deadline_id": "demo_deadline_scene",
+        "status": "tentative",
+        "notes": "Alternative estimated window; no final commitment.",
+        "confidence": "medium",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/grove-scene"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_deadline_target_lumen_adaptive",
+      "kind": "deadline_target",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_lumen",
+        "deadline_id": "demo_deadline_adaptive",
+        "status": "suggested",
+        "notes": "Exploratory fit only; the fictional date is still TBA.",
+        "confidence": "low",
+        "source": "Fictional demo history",
+        "source_url": "https://example.org/demo/decisions/lumen-adaptive"
+      },
+      "created_at": "2026-04-11T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_atlas_outline",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_atlas",
+        "title": "Writing outline agreed",
+        "summary": "The fictional team settled on three questions: what to remember, when to retrieve it, and how to measure failure.",
+        "date": "2026-10-17",
+        "next_action": "Draft the methods section and add one clear failure example.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/atlas/outline"
+          }
+        ]
+      },
+      "created_at": "2026-10-17T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_atlas_ablation",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_atlas",
+        "title": "Ablation complete",
+        "summary": "In this invented example, the smaller memory module retained the baseline behavior. The finding is demo content, not a real research result.",
+        "date": "2026-10-12",
+        "next_action": "Check the evaluation protocol before making a paper claim.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/atlas/ablation"
+          }
+        ]
+      },
+      "created_at": "2026-10-12T12:00:00.000Z",
+      "updated_at": "2026-10-12T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_mosaic_baseline",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_mosaic",
+        "title": "First baseline ready",
+        "summary": "A simple scene-grouping baseline is ready for a reproducible comparison in this fictional project.",
+        "date": "2026-10-16",
+        "next_action": "Choose held-out scenes and agree on a target venue.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/mosaic/baseline"
+          }
+        ]
+      },
+      "created_at": "2026-10-16T12:00:00.000Z",
+      "updated_at": "2026-10-16T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_nightglass_revision",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_nightglass",
+        "title": "Revision plan agreed",
+        "summary": "The fictional review highlighted generalization and missing comparisons. The team is working through those gaps.",
+        "date": "2026-10-15",
+        "next_action": "Complete the robustness evaluation before starting the new draft.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/nightglass/revision"
+          }
+        ]
+      },
+      "created_at": "2026-10-15T12:00:00.000Z",
+      "updated_at": "2026-10-15T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_orbit_decision",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_orbit",
+        "title": "Accepted after revision",
+        "summary": "This synthetic history shows an accepted paper while preserving its earlier rejection.",
+        "date": "2026-10-14",
+        "next_action": "Prepare a concise presentation and release checklist.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/orbit/decision"
+          }
+        ]
+      },
+      "created_at": "2026-10-14T12:00:00.000Z",
+      "updated_at": "2026-10-14T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_project_update_compass_resubmission",
+      "kind": "project_update",
+      "revision": 1,
+      "data": {
+        "project_id": "demo_project_compass",
+        "title": "Revision submitted",
+        "summary": "The fictional revision was sent to a new venue. Its decision remains pending.",
+        "date": "2026-10-13",
+        "next_action": "Keep the response plan and evaluation artifacts together.",
+        "sources": [
+          {
+            "label": "Fictional lab note",
+            "url": "https://example.org/demo/updates/compass/resubmission"
+          }
+        ]
+      },
+      "created_at": "2026-10-13T12:00:00.000Z",
+      "updated_at": "2026-10-13T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_lab_setting_project_statuses",
+      "kind": "lab_setting",
+      "revision": 1,
+      "data": {
+        "setting_type": "project_statuses",
+        "options": [
+          {
+            "label": "In Progress",
+            "color": "#148575"
+          },
+          {
+            "label": "Writing",
+            "color": "#9568b0"
+          },
+          {
+            "label": "Done",
+            "color": "#657468"
+          },
+          {
+            "label": "Done + submitted",
+            "color": "#507ca3"
+          },
+          {
+            "label": "Done + accepted",
+            "color": "#22845b"
+          },
+          {
+            "label": "Rejected + in progress",
+            "color": "#b67a2d"
+          },
+          {
+            "label": "Rejected + resubmitted",
+            "color": "#8564ad"
+          },
+          {
+            "label": "Merged",
+            "color": "#7b718f"
+          },
+          {
+            "label": "Canceled",
+            "color": "#b46a75"
+          },
+          {
+            "label": "Vague Idea",
+            "color": "#a2a9bb"
+          },
+          {
+            "label": "Half Baked",
+            "color": "#93866b"
+          }
+        ]
+      },
+      "created_at": "2026-09-03T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_lab_setting_student_lab_statuses",
+      "kind": "lab_setting",
+      "revision": 1,
+      "data": {
+        "setting_type": "student_lab_statuses",
+        "options": [
+          {
+            "label": "In Group",
+            "color": "#148575"
+          },
+          {
+            "label": "Active Candidate",
+            "color": "#b88334"
+          },
+          {
+            "label": "Candidate",
+            "color": "#8b93a3"
+          },
+          {
+            "label": "From Another Lab",
+            "color": "#507ca3"
+          },
+          {
+            "label": "Alumni",
+            "color": "#93866b"
+          }
+        ]
+      },
+      "created_at": "2026-09-03T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    },
+    {
+      "id": "demo_lab_setting_student_degrees",
+      "kind": "lab_setting",
+      "revision": 1,
+      "data": {
+        "setting_type": "student_degrees",
+        "options": [
+          {
+            "label": "PhD",
+            "color": "#148575"
+          },
+          {
+            "label": "MSc",
+            "color": "#507ca3"
+          },
+          {
+            "label": "BSc",
+            "color": "#b88334"
+          },
+          {
+            "label": "Postdoc",
+            "color": "#9568b0"
+          }
+        ]
+      },
+      "created_at": "2026-09-03T12:00:00.000Z",
+      "updated_at": "2026-10-17T12:00:00.000Z",
+      "deleted_at": null
+    }
+  ],
+  "links": [
+    {
+      "project_id": "demo_project_atlas",
+      "student_id": "demo_student_mira"
+    },
+    {
+      "project_id": "demo_project_atlas",
+      "student_id": "demo_student_elena"
+    },
+    {
+      "project_id": "demo_project_mosaic",
+      "student_id": "demo_student_noor"
+    },
+    {
+      "project_id": "demo_project_mosaic",
+      "student_id": "demo_student_ada"
+    },
+    {
+      "project_id": "demo_project_orbit",
+      "student_id": "demo_student_theo"
+    },
+    {
+      "project_id": "demo_project_orbit",
+      "student_id": "demo_student_elena"
+    },
+    {
+      "project_id": "demo_project_nightglass",
+      "student_id": "demo_student_luca"
+    },
+    {
+      "project_id": "demo_project_nightglass",
+      "student_id": "demo_student_imani"
+    },
+    {
+      "project_id": "demo_project_lumen",
+      "student_id": "demo_student_ada"
+    },
+    {
+      "project_id": "demo_project_lumen",
+      "student_id": "demo_student_noor"
+    },
+    {
+      "project_id": "demo_project_sparrow",
+      "student_id": "demo_student_sam"
+    },
+    {
+      "project_id": "demo_project_sparrow",
+      "student_id": "demo_student_mira"
+    },
+    {
+      "project_id": "demo_project_tide",
+      "student_id": "demo_student_imani"
+    },
+    {
+      "project_id": "demo_project_tide",
+      "student_id": "demo_student_theo"
+    },
+    {
+      "project_id": "demo_project_compass",
+      "student_id": "demo_student_felix"
+    },
+    {
+      "project_id": "demo_project_compass",
+      "student_id": "demo_student_elena"
+    },
+    {
+      "project_id": "demo_project_pebble",
+      "student_id": "demo_student_kai"
+    },
+    {
+      "project_id": "demo_project_pebble",
+      "student_id": "demo_student_luca"
+    },
+    {
+      "project_id": "demo_project_grove",
+      "student_id": "demo_student_theo"
+    },
+    {
+      "project_id": "demo_project_grove",
+      "student_id": "demo_student_ada"
+    },
+    {
+      "project_id": "demo_project_echo",
+      "student_id": "demo_student_felix"
+    }
+  ],
+  "files": [],
+  "audit_events": []
+}
