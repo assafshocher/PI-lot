@@ -4,7 +4,7 @@
 .lab-topnav .lab-sidebar .lab-workspace-header{margin:0;min-width:0}
 .lab-topnav .lab-sidebar .lab-title-row{display:block;margin:0}
 .lab-topnav .lab-sidebar .lab-title-row h1{font-size:20px;letter-spacing:-.6px;white-space:nowrap}
-.lab-topnav .lab-sidebar .lab-title-row h1:before{content:"";display:inline-block;width:30px;height:30px;margin:0 9px 0 0;vertical-align:-7px;background:url("/favicon.svg") center/contain no-repeat}
+.lab-topnav .lab-sidebar .lab-title-row h1:before{content:"";display:inline-block;width:30px;height:30px;margin:0 9px 0 0;vertical-align:-7px;background:url("/pia-professor.png") center/contain no-repeat}
 .lab-topnav .lab-sidebar .lab-title-row p,.lab-topnav .lab-sidebar-footer{display:none}
 .lab-topnav .lab-global-search{width:100%;max-width:220px;min-width:0;margin:0}
 .lab-topnav .lab-tabs{display:flex;flex-direction:row;align-items:center;justify-content:flex-end;gap:5px;margin:0;padding:0;border:0;overflow:visible}

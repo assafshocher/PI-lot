@@ -1,3 +1,5 @@
+<img src="public/pia-professor.png" width="72" alt="PIA’s absent-minded professor icon" />
+
 # PIA
 
 **Principal Investigator's Assistant.**
