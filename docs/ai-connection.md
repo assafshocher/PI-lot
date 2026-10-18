@@ -1,25 +1,25 @@
 # Connect your assistant
 
-PI-lot exposes a remote Model Context Protocol (MCP) endpoint at **`https://YOUR-APP-ORIGIN/mcp`**. It provides structured tools for workspace context, searching and reading records, safe edits, archiving/restoration, and people–project relationships.
+PIA exposes a remote Model Context Protocol (MCP) endpoint at **`https://YOUR-APP-ORIGIN/mcp`**. It provides structured tools for workspace context, searching and reading records, safe edits, archiving/restoration, and people–project relationships.
 
-The assistant runs in its own product. PI-lot does not run a model, buy inference, or turn a ChatGPT subscription into an API key. You can use an assistant's existing subscription when that product permits your remote MCP connection. Its plan, admin policies, tool approvals and usage limits still apply.
+The assistant runs in its own product. PIA does not run a model, buy inference, or turn a ChatGPT subscription into an API key. You can use an assistant's existing subscription when that product permits your remote MCP connection. Its plan, admin policies, tool approvals and usage limits still apply.
 
 ## Before connecting
 
 - Deploy your private copy and verify browser login first.
 - Use the exact configured HTTPS origin, ending in `/mcp`.
 - Choose a client with remote/Streamable HTTP MCP and OAuth support. Browser-only login cookies are not MCP credentials.
-- Complete the PI-lot sign-in and consent screen yourself. Do not give your owner password to the model or put it in an MCP configuration file.
+- Complete the PIA sign-in and consent screen yourself. Do not give your owner password to the model or put it in an MCP configuration file.
 
-PI-lot uses OAuth authorization with PKCE. The owner approves each connection. OAuth tokens grant access to the same single-owner workspace visible in the browser. Review a client's requested permissions before approving it.
+PIA uses OAuth authorization with PKCE. The owner approves each connection. OAuth tokens grant access to the same single-owner workspace visible in the browser. Review a client's requested permissions before approving it.
 
 ## Codex
 
 With a current Codex CLI installed:
 
 ```sh
-codex mcp add pi-lot --url https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/mcp
-codex mcp login pi-lot
+codex mcp add pia --url https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/mcp
+codex mcp login pia
 ```
 
 Follow the browser sign-in and consent flow. Use `codex mcp list` to inspect configuration, or `/mcp` within the Codex terminal interface to inspect active servers. These commands follow the [official Codex MCP guide](https://developers.openai.com/codex/mcp/); consult it if your installed version uses different options.
@@ -27,23 +27,23 @@ Follow the browser sign-in and consent flow. Use `codex mcp list` to inspect con
 Alternatively, a remote server entry in Codex configuration uses:
 
 ```toml
-[mcp_servers.pi-lot]
+[mcp_servers.pia]
 url = "https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/mcp"
 ```
 
-Then run `codex mcp login pi-lot`. Configuring a URL alone does not grant access.
+Then run `codex mcp login pia`. Configuring a URL alone does not grant access.
 
 ## ChatGPT
 
 Custom app/MCP availability varies by plan, workspace policy and client. Check the current [OpenAI developer-mode and MCP instructions](https://help.openai.com/en/articles/12584461-developer-mode-and-full-mcp-connectors-in-chatgpt) for your account.
 
-Where your account offers custom MCP apps, create an app using your `/mcp` URL, select OAuth, complete PI-lot's authorization, and let the client scan its tools. Do not select unauthenticated access for a private workspace. A local Codex configuration does not automatically create a ChatGPT web app.
+Where your account offers custom MCP apps, create an app using your `/mcp` URL, select OAuth, complete PIA's authorization, and let the client scan its tools. Do not select unauthenticated access for a private workspace. A local Codex configuration does not automatically create a ChatGPT web app.
 
 This project does not promise access to custom MCP apps on every ChatGPT subscription, and it is not a published app-store listing. The setup instructions describe the supported protocol; a successful connection must still be verified in the client you use.
 
 ## Other MCP clients
 
-Use the client's **remote MCP / Streamable HTTP** connection flow with the same `/mcp` URL and OAuth. The server supports Client ID Metadata Documents (CIMD) and the registration behavior provided by its pinned Cloudflare OAuth library. Older clients may need updating. A client that supports only local stdio servers or only unauthenticated remote URLs will need an appropriate supported bridge or a different client; do not disable PI-lot's authentication to make it connect.
+Use the client's **remote MCP / Streamable HTTP** connection flow with the same `/mcp` URL and OAuth. The server supports Client ID Metadata Documents (CIMD) and the registration behavior provided by its pinned Cloudflare OAuth library. Older clients may need updating. A client that supports only local stdio servers or only unauthenticated remote URLs will need an appropriate supported bridge or a different client; do not disable PIA's authentication to make it connect.
 
 The authorization implementation uses [Cloudflare's Workers OAuth Provider](https://github.com/cloudflare/workers-oauth-provider). See also Cloudflare's [MCP authorization guide](https://developers.cloudflare.com/agents/model-context-protocol/protocol/authorization/).
 
@@ -51,7 +51,7 @@ The authorization implementation uses [Cloudflare's Workers OAuth Provider](http
 
 Start with:
 
-> Read my PI-lot workspace context. Summarize active projects, people needing follow-up and upcoming deadlines. Do not change any records yet.
+> Read my PIA workspace context. Summarize active projects, people needing follow-up and upcoming deadlines. Do not change any records yet.
 
 The answer should contain records from your own workspace. Then try a small, explicit change:
 
@@ -70,7 +70,7 @@ Edits use current record revisions and action keys to catch conflicting changes 
 
 ## Slack, email and schedules
 
-PI-lot does not include a Slack bot or an email connector. An assistant with separately authorized Slack/email tools can read relevant material, update PI-lot through MCP and, when you authorize it, post a summary. Sending messages and recurring updates require their own permissions and setup in that assistant. No recurring monitor is enabled by connecting PI-lot alone.
+PIA does not include a Slack bot or an email connector. An assistant with separately authorized Slack/email tools can read relevant material, update PIA through MCP and, when you authorize it, post a summary. Sending messages and recurring updates require their own permissions and setup in that assistant. No recurring monitor is enabled by connecting PIA alone.
 
 ## Revoke access
 
@@ -80,4 +80,4 @@ OAuth grants use Cloudflare KV, whose updates are eventually consistent across l
 
 ## Compatibility status
 
-The repository includes server-side automated tests and a local demo. Client instructions are based on the linked official documentation. Unless a release explicitly records a completed client test, do not interpret these instructions as a claim that every Codex, ChatGPT or third-party version has been tested end to end. Test one read and one authorized write after connecting your deployed copy.
+The video demonstrates a real ChatGPT read and write on a private Sites-hosted demo, with the saved changes verified in the app. That demo uses Sites-managed authentication. The standalone Worker's MCP and OAuth flows have passed local integration tests; a fresh Cloudflare deployment and ChatGPT OAuth onboarding for that deployment have not yet been tested end to end. Verify one read and one authorized write on your own installation. Client instructions are based on the linked official documentation, and availability can vary by product, plan and version.

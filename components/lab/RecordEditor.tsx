@@ -17,7 +17,7 @@ export function Modal({ title, subtitle, children, onClose, wide = false }: { ti
   const ref = useRef<HTMLDialogElement>(null);
   useEffect(() => { const dialog = ref.current; dialog?.showModal(); const previous = document.body.style.overflow; document.body.style.overflow = "hidden"; return () => { dialog?.close(); document.body.style.overflow = previous; }; }, []);
   return <dialog ref={ref} className={`lab-dialog ${wide ? "lab-dialog-wide" : ""}`} onCancel={event => { event.preventDefault(); onClose(); }} onClick={event => { if (event.target === event.currentTarget) onClose(); }} aria-labelledby="lab-dialog-title">
-    <div className="lab-dialog-header"><div><p className="lab-eyebrow">PI-LOT</p><h2 id="lab-dialog-title">{title}</h2>{subtitle && <p>{subtitle}</p>}</div><button className="lab-icon-button" type="button" aria-label="Close dialog" onClick={onClose}><X size={20} /></button></div>
+    <div className="lab-dialog-header"><div><p className="lab-eyebrow">PIA</p><h2 id="lab-dialog-title">{title}</h2>{subtitle && <p>{subtitle}</p>}</div><button className="lab-icon-button" type="button" aria-label="Close dialog" onClick={onClose}><X size={20} /></button></div>
     {children}
   </dialog>;
 }

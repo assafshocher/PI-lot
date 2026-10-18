@@ -1,4 +1,4 @@
-# Contributing to PI-lot
+# Contributing to PIA
 
 Small, focused improvements are welcome. For a larger feature or a change to authentication or the data model, open an issue describing the problem and proposed behavior before investing in the implementation.
 

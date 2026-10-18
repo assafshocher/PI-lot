@@ -1,6 +1,6 @@
 # Security
 
-PI-lot is a single-owner application intended for deployment into your own Cloudflare account. It is not a multi-user authorization system or a substitute for your institution's data policy.
+PIA is a single-owner application intended for deployment into your own Cloudflare account. It is not a multi-user authorization system or a substitute for your institution's data policy.
 
 ## Access model
 

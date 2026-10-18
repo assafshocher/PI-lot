@@ -1,6 +1,6 @@
 # Third-party notices
 
-PI-lot's own source is licensed under [MIT](LICENSE). Dependencies and vendored material retain their respective copyright and license notices. The project license does not replace those notices or grant rights to third-party trademarks.
+PIA's own source is licensed under [MIT](LICENSE). Dependencies and vendored material retain their respective copyright and license notices. The project license does not replace those notices or grant rights to third-party trademarks.
 
 ## Vendored material
 

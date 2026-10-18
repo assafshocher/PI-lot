@@ -12,7 +12,7 @@ if(!fs.existsSync(vars))fs.writeFileSync(vars,'DEMO_MODE="true"\nAPP_ORIGIN="htt
 const run=(args)=>{const r=spawnSync(process.execPath,args,{stdio:'inherit',cwd:root});if(r.status!==0)process.exit(r.status||1)};
 run(['node_modules/wrangler/bin/wrangler.js','d1','migrations','apply','DB','--local','--config','wrangler.jsonc']);
 run(['scripts/seed-demo.mjs','--demo']);
-console.log('\nPI-lot fictional demo: http://127.0.0.1:5174\nAll people, projects, and deadline dates are illustrative.\n');
+console.log('\nPIA fictional demo: http://127.0.0.1:5174\nAll people, projects, and deadline dates are illustrative.\n');
 const child=spawn(process.execPath,['node_modules/vite/bin/vite.js','--host','127.0.0.1'],{stdio:'inherit',cwd:root});
 for(const signal of ['SIGINT','SIGTERM'])process.on(signal,()=>child.kill(signal));
 child.on('exit',code=>process.exit(code||0));

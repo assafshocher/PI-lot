@@ -1,4 +1,4 @@
-# Deploy a private PI-lot
+# Deploy a private PIA
 
 Each deployment is one owner's workspace. The source code is public; your records, password, sessions, attachments and AI grants belong in your own deployment.
 
@@ -6,7 +6,7 @@ Each deployment is one owner's workspace. The source code is public; your record
 
 You need a GitHub account and a Cloudflare account with Workers, D1, KV and R2 available. Cloudflare may ask you to enable a service or add billing details. Check the current [Workers](https://developers.cloudflare.com/workers/platform/pricing/), [D1](https://developers.cloudflare.com/d1/platform/pricing/) and [R2](https://developers.cloudflare.com/r2/pricing/) pricing; this project does not promise free hosting.
 
-1. Choose [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/assafshocher/PI-lot). Follow the flow to create a repository in your account and connect the Worker build.
+1. Choose [Deploy to Cloudflare](https://deploy.workers.cloudflare.com/?url=https://github.com/assafshocher/PIA). Follow the flow to create a repository in your account and connect the Worker build.
 2. Choose the Worker name and let Cloudflare provision the `DB`, `BUCKET` and `OAUTH_KV` bindings. Keep the binding names unchanged; resource names can be yours.
 3. Supply a unique `OWNER_PASSWORD` of at least 16 characters and a separate random `SESSION_SECRET` of at least 32 characters. Store both as Worker secrets. A password manager can generate and retain them.
 4. The expected build command is `npm run build`; the deployment command is `npm run deploy`. The latter applies the schema to the remote `DB` binding before deploying the Worker.
@@ -28,8 +28,8 @@ This prints a new secret for you to place in the password manager and secret con
 For more control, clone the repository and install dependencies. These commands use your own authenticated Cloudflare account:
 
 ```sh
-git clone https://github.com/assafshocher/PI-lot.git
-cd PI-lot
+git clone https://github.com/assafshocher/PIA.git
+cd PIA
 npm ci
 npx wrangler login
 npx wrangler d1 create pi-lot

@@ -1,12 +1,14 @@
-# PI-lot
+# PIA
 
-**A little less lab admin. A little more research.**
+**Principal Investigator's Assistant.**
 
-PI-lot is a private research workspace that connects **people → projects → deadlines** in one interactive map. Follow a student into their project, explore its submission history, or add a new connection directly on the graph. Use it in your browser, or connect an AI assistant through MCP to help keep it current.
+PIA is a private research workspace that connects **people → projects → deadlines** in one interactive map. Follow a student into their project, explore its submission history, or add a new connection directly on the graph. Use it in your browser, or connect an AI assistant through MCP to help keep it current.
 
-[![PI-lot research map with entirely fictional demo data](docs/demo-poster.jpg)](https://github.com/assafshocher/PI-lot/raw/refs/heads/main/docs/demo.mp4)
+[![PIA research map with entirely fictional demo data](docs/demo-poster.jpg)](https://github.com/assafshocher/PIA/raw/refs/heads/main/docs/demo.mp4)
 
-[Watch the 53-second walkthrough](https://github.com/assafshocher/PI-lot/raw/refs/heads/main/docs/demo.mp4) — actual app interactions with entirely fictional data.
+[Watch the 44-second walkthrough](https://github.com/assafshocher/PIA/raw/refs/heads/main/docs/demo.mp4) — actual app interactions at 1.5× speed, with entirely fictional data: reshape the graph, edit connected records, and save an update through ChatGPT.
+
+The live ChatGPT update uses a private Sites-hosted demo with Sites-managed authentication. The self-hosted edition uses its own OAuth setup, described below.
 
 [Try it locally](#try-the-demo) · [Deploy your private copy](docs/deployment.md) · [Connect your assistant](docs/ai-connection.md) · [How it works](docs/architecture.md)
 
@@ -22,7 +24,7 @@ PI-lot is a private research workspace that connects **people → projects → d
 
 ## A real app, with an optional AI connection
 
-PI-lot works without an AI assistant. Its browser interface and database are the application; its MCP server gives an authorized assistant tools to read and update the same records.
+PIA works without an AI assistant. Its browser interface and database are the application; its MCP server gives an authorized assistant tools to read and update the same records.
 
 The app does **not** call a model API, require an AI API key, or include AI inference in its hosting. You use the account or subscription of your chosen assistant. That assistant must support remote MCP and OAuth; availability and permissions depend on its product and plan. A skill can provide helpful workflows, but it does not replace the running app or its authentication.
 
@@ -31,21 +33,21 @@ The app does **not** call a model API, require an AI API key, or include AI infe
 Install **Node.js 24 LTS** and Git, then:
 
 ```sh
-git clone https://github.com/assafshocher/PI-lot.git
-cd PI-lot
+git clone https://github.com/assafshocher/PIA.git
+cd PIA
 npm ci
 npm run demo
 ```
 
 Open **http://127.0.0.1:5174/lab**. The command prepares local configuration when absent, applies local migrations, loads fictional records, and starts the app. No Cloudflare account is needed for this local preview.
 
-Use a fresh clone for the demo. The sample is additive and is not meant to be mixed into your own records. Every person, project, venue, result and source link in the demo was invented from scratch. Dates are illustrative. The demo does not contain renamed private records, imported provenance or original audit history, and it never seeds a remote database. See [demo details](demo/README.md).
+Use a fresh clone for the demo. The sample is additive and is not meant to be mixed into your own records. Every person, project, venue, result and source link in the demo was invented from scratch. Dates are illustrative. The demo does not contain renamed private records, imported provenance or original audit history, and the local demo command never seeds a remote database. See [demo details](demo/README.md).
 
 ## Make it your own
 
 The quickest hosted route is the Cloudflare deployment flow:
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/assafshocher/PI-lot)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/assafshocher/PIA)
 
 The deployment creates your own Worker, D1 database, private R2 bucket and OAuth storage. Choose a strong owner password and a separate session secret, then set your exact HTTPS app address. **The app stays locked until its configuration is valid.** Follow the [deployment guide](docs/deployment.md), including the short check after setup. The button is a deployment entry point; it does not make your private workspace public.
 
@@ -70,13 +72,13 @@ After private deployment, add this remote MCP URL to a compatible assistant:
 https://YOUR-WORKER.YOUR-SUBDOMAIN.workers.dev/mcp
 ```
 
-Complete PI-lot's owner login and the OAuth permission screen. Start with a read-only request:
+Complete PIA's owner login and the OAuth permission screen. Start with a read-only request:
 
-> Read my PI-lot workspace. Summarize active projects and upcoming deadlines. Do not change anything yet.
+> Read my PIA workspace. Summarize active projects and upcoming deadlines. Do not change anything yet.
 
 Then try a specific action, such as adding a prospective student, recording a project update with its source, or proposing tentative conference targets. Review saved changes in the app. Manage and revoke AI connections at **`/auth/connections`**.
 
-See [AI connection instructions](docs/ai-connection.md) for Codex, ChatGPT, other clients, and what has and has not been verified. Slack and email access come from your assistant's own authorized connections; PI-lot does not silently connect to either or set up a background schedule.
+See [AI connection instructions](docs/ai-connection.md) for Codex, ChatGPT, other clients, and what has and has not been verified. Slack and email access come from your assistant's own authorized connections; PIA does not silently connect to either or set up a background schedule.
 
 ## Scope and privacy
 

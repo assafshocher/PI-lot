@@ -1,8 +1,8 @@
 {
-  "name": "pi-lot",
+  "name": "pia",
   "version": "0.1.0",
   "private": true,
-  "description": "A private research workspace for people, projects and deadlines, with an optional AI connection.",
+  "description": "PIA \u2014 Principal Investigator's Assistant. A private research workspace for people, projects and deadlines, with an optional AI connection.",
   "license": "MIT",
   "type": "module",
   "engines": {

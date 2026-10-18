@@ -40,7 +40,7 @@ export default function LabSettings({ state, refresh, notify }: { state: LabStat
       const records = backup.records.filter(r => ["project", "student", "deadline", "lab_setting", "deadline_target", "project_update"].includes(r.kind));
       const fileIds = new Set(records.flatMap(record => record.data.files || []).map(file => file.url.startsWith("/api/files/") ? file.url.slice("/api/files/".length) : "").filter(Boolean));
       const lab = { ...backup, records, files: backup.files?.filter(file => typeof file === "object" && file !== null && "id" in file && fileIds.has(String(file.id))), audit_events: undefined };
-      const blob = new Blob([JSON.stringify(lab, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = `pi-lot-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); notify("Lab backup downloaded. Uploaded files remain hosted privately.");
+      const blob = new Blob([JSON.stringify(lab, null, 2)], { type: "application/json" }); const url = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = url; a.download = `pia-backup-${new Date().toISOString().slice(0, 10)}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000); notify("Lab backup downloaded. Uploaded files remain hosted privately.");
     } catch (err) { setError(err instanceof Error ? err.message : "Export failed."); } finally { setBusy(""); }
   };
   const importBackup = async (file: File) => {
@@ -50,7 +50,7 @@ export default function LabSettings({ state, refresh, notify }: { state: LabStat
       const data = JSON.parse(await file.text());
       if (!Array.isArray(data.records)) throw new Error("Choose a workspace JSON backup containing records. For an older Base44 export, ask your assistant to migrate it using the app connection.");
       const records = data.records.filter((r: { kind?: string }) => ["project", "student", "deadline", "lab_setting", "deadline_target", "project_update"].includes(r.kind || ""));
-      if (!records.length) throw new Error("No PI-lot records found in this backup.");
+      if (!records.length) throw new Error("No PIA records found in this backup.");
       if (records.length > 2000) throw new Error("This backup has more than 2,000 records. Ask your assistant to import it in batches with relationships preserved.");
       const result = await api<{ created: number; skipped: number }>("/api/import", { method: "POST", body: JSON.stringify({ records, links: data.links, mode: "merge" }) });
       await refresh(); notify(`Import complete: ${result.created} added, ${result.skipped} already present.`);

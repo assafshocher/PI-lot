@@ -1,6 +1,6 @@
 # Architecture
 
-PI-lot is a browser application and a server, with an optional AI interface. It can be used independently of an assistant.
+PIA is a browser application and a server, with an optional AI interface. It can be used independently of an assistant.
 
 ```mermaid
 flowchart LR
@@ -32,7 +32,7 @@ This release uses one stable owner identity per deployment. Browser sessions and
 
 Browser login requires a configured owner password. Session signing uses an independent secret, with origin checks on sensitive browser actions. Authentication fails closed when deployment configuration is missing or invalid. Incoming identity headers are not an alternative to authentication.
 
-The MCP endpoint delegates OAuth protocol handling to `@cloudflare/workers-oauth-provider`, with grant storage in `OAUTH_KV`. Owner login and approval precede access. The app supplies tools; the connected assistant supplies inference. No model API credentials are required by PI-lot.
+The MCP endpoint delegates OAuth protocol handling to `@cloudflare/workers-oauth-provider`, with grant storage in `OAUTH_KV`. Owner login and approval precede access. The app supplies tools; the connected assistant supplies inference. No model API credentials are required by PIA.
 
 KV is eventually consistent across Cloudflare locations, so new grants and revocations may take time to propagate. The local integration tests exercise the protocol against isolated storage; they do not simulate worldwide cache propagation. See [KV consistency](https://developers.cloudflare.com/kv/concepts/how-kv-works/).
 
