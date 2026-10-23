@@ -12,7 +12,7 @@ PIA is a private research workspace that connects **people → projects → dead
 
 The live ChatGPT update uses a private Sites-hosted demo with Sites-managed authentication. The self-hosted edition uses its own OAuth setup, described below.
 
-[Try it locally](#try-the-demo) · [Deploy your private copy](docs/deployment.md) · [Connect your assistant](docs/ai-connection.md) · [How it works](docs/architecture.md)
+[Try the online demo](https://assafshocher.github.io/pia/) · [Try it locally](#try-the-demo) · [Deploy your private copy](docs/deployment.md) · [Connect your assistant](docs/ai-connection.md) · [How it works](docs/architecture.md)
 
 ## What you can do
 
@@ -31,6 +31,10 @@ PIA works without an AI assistant. Its browser interface and database are the ap
 The app does **not** call a model API, require an AI API key, or include AI inference in its hosting. You use the account or subscription of your chosen assistant. That assistant must support remote MCP and OAuth; availability and permissions depend on its product and plan. A skill can provide helpful workflows, but it does not replace the running app or its authentication.
 
 ## Try the demo
+
+**[Open the public demo](https://assafshocher.github.io/pia/)** — no login required. Explore fictional people, projects and deadlines, edit records and connections, and reset whenever you like. Edits stay in your browser. The public demo has no live MCP connection or file uploads; deploy your own private copy for those features.
+
+To build this browser-only edition, run `npm run build:demo`. The static output is `dist-demo/`, configured for the `/pia/` path. It uses the same workspace interface with a local data adapter and never calls the private app.
 
 Install **Node.js 24 LTS** and Git, then:
 

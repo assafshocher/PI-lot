@@ -121,6 +121,7 @@ export function graphDeadlineDateLabel(data: LabData) {
 }
 export function isComplete(status?: string) { return /^(done(?: \+ (?:submitted|accepted))?|merged|finished|completed|published|archived)$/i.test(projectStatusValue(status)); }
 export class ApiError extends Error { constructor(message: string, public status: number) { super(message); } }
+export const IS_BROWSER_DEMO = import.meta.env?.VITE_BROWSER_DEMO === "true";
 let csrfToken: Promise<string> | undefined;
 async function mutationToken() {
   csrfToken ??= fetch("/api/me").then(async response => {
@@ -132,6 +133,7 @@ async function mutationToken() {
   return csrfToken;
 }
 export async function api<T>(path: string, options: RequestInit = {}): Promise<T> {
+  if (IS_BROWSER_DEMO) { const { browserDemo } = await import("../../src/demo-runtime"); return browserDemo.request<T>(path, options); }
   const headers = new Headers(options.headers);
   if (!(options.body instanceof FormData)) headers.set("Content-Type", "application/json");
   if (!["GET", "HEAD", "OPTIONS"].includes((options.method || "GET").toUpperCase())) headers.set("X-CSRF-Token", await mutationToken());

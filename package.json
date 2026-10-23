@@ -13,11 +13,14 @@
     "demo": "node scripts/demo.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview --host 127.0.0.1",
-    "test": "node --test lib/*.test.mjs components/lab/*.test.mjs worker/*.test.mjs demo/*.test.mjs",
+    "test": "node --test lib/*.test.mjs components/lab/*.test.mjs worker/*.test.mjs demo/*.test.mjs src/browser-store.test.mjs",
     "db:migrate": "wrangler d1 migrations apply DB --local --config wrangler.jsonc",
     "deploy": "wrangler d1 migrations apply DB --remote --config wrangler.jsonc && wrangler deploy",
     "check:release": "node scripts/check-release.mjs",
-    "test:integration": "node worker/integration.mjs"
+    "test:integration": "node worker/integration.mjs",
+    "build:demo": "tsc --noEmit && vite build --config vite.demo.config.ts",
+    "dev:demo": "vite --config vite.demo.config.ts",
+    "test:demo": "node --test src/browser-store.test.mjs"
   },
   "dependencies": {
     "@cloudflare/workers-oauth-provider": "1.2.3",
